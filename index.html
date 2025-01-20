@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habit Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <h1>Habit Tracker</h1>
+
+        <div id="habit-input">
+            <input type="text" id="habit-name" placeholder="Enter a habit">
+            <select id="habit-frequency">
+                <option value="daily">Daily</option>
+                <option value="weekly">Weekly</option>
+                <option value="monthly">Monthly</option>
+            </select>
+            <button id="add-habit">Add Habit</button>
+        </div>
+
+        <div id="habit-list">
+            <h2>My Habits</h2>
+        </div>
+
+        <div id="progress-section">
+            <h2>Progress Overview</h2>
+            <canvas id="progress-chart" width="400" height="200"></canvas>
+        </div>
+
+        <div id="reflection-section">
+            <h2>Reflection</h2>
+            <textarea id="reflection-notes" placeholder="Write your thoughts here..."></textarea>
+            <button id="save-reflection">Save Reflection</button>
+        </div>
+
+        <div id="view-reflections-section">
+            <h2>Past Reflections</h2>
+            <div id="reflection-list">
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
